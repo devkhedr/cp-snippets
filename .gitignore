@@ -1,2 +1,6 @@
+# Ignore everything
 *
+
+# Allow only .cpp files
 !*.cpp
+!*/
