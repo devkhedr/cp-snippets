@@ -25,5 +25,15 @@ int main() {
     for(auto it: vec) {
         cout << it << " ";
     }
+    cout << endl;
+    
+    map<string, int, customCompare> mp;
+    mp["apple"] = 1;
+    mp["banana"] = 2;
+    mp["kiwi"] = 3;
+
+    for (auto &p : mp) {
+        cout << p.first << " -> " << p.second << endl;
+    }
     return 0;
 }
