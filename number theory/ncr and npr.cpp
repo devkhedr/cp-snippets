@@ -41,9 +41,17 @@ int nCr(int n, int r) {
     return res;
 }
 
+int npr(int n, int r) {
+    if(r > n) return 0;
+    ll npr = 1;
+    while(r-- > 0)
+        npr *= n--;
+    return npr;
+
+}
 int main() {
     fastio;
     fact();
-    cout << nCr(4, 2) << endl;
+    cout << nCr(4, 2) << ' ' << npr(4, 2) << endl;
     return 0;
 }
